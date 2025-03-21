@@ -1,0 +1,139 @@
+:root {
+ --primary-color: #7daaac;
+ --text-color: #FBE4D6;
+ --button-color: #0C0950;
+ --header:#034C53;
+ --secondFont-color:rgb(12, 12, 73);
+ --bg-main: 
+}
+
+ 
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+
+}
+.navbar{
+     font-family: "Poppins", sans-serif;;
+    background: var(--header);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:60px;
+    font-size: 20px;
+}
+.navbar h1{
+    margin-left: 10px;
+    padding: 5px;
+
+}
+.links a{
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 20px;
+    /* border: 1px solid black; */
+}
+
+
+
+.main{
+    background: var(--primary-color);
+    height: 70vh;
+    width: 100%;
+    position: relative; 
+}
+
+/* .img-box{
+    background-image: url('/resouces/images/park.png');
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center ;
+    filter: brightness(60%);
+    z-index: 1;
+} */
+
+/* .img-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+} */
+.text{
+    padding: 2rem;
+    margin: 0;
+}
+ .text h1{
+    font-size: 80px;
+    font-weight: 100;
+    color: var(--button-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+.text h2{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: rgb(75, 54, 16);
+}
+
+.text p{
+    font-size: 1.5rem;
+    font-weight: 90;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.page-one{
+    display: flexbox;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    /* background: #a01313; */
+}
+
+
+
+.search-coint{
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+    
+}
+
+#locationInput{
+    width: 600px;
+    height: 1.5rem;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.book{
+    text-align: center;
+    height: 10px;
+    margin-top: 1.5rem;
+}
+ 
+.testi{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70vh;
+
+}
