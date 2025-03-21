@@ -1,0 +1,30 @@
+@import url('variables.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+
+}
+body{
+    background: var(--header);
+}
+h1{
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 1.5rem;
+}
+.main form{
+    background: var(--secondary-color);
+    padding: 1rem;
+    width: 400px;
+    border-radius: 10px;
+    filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 1));
+}

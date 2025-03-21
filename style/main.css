@@ -126,14 +126,23 @@
 .book{
     text-align: center;
     height: 10px;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
  
-.testi{
+.testimonial{
     font-family: "Poppins", sans-serif;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 70vh;
 
+}
+.testimonial .hero{
+    /* border: 2px solid black; */
+    border-radius: 1rem;
+    padding: 25px;
+    width: 250px;
+    background: #263797;;
+    filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 1));
+    
 }
