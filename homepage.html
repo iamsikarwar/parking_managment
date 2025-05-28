@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Management System</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header>
+        <h1>Parking Management System</h1>
+    </header>
+
+    <nav>
+        <a href="#" data-page="home">Home</a>
+        <a href="booking.html" data-page="booking">Booking</a>
+        <a href="checkout.html" data-page="checkout">Check-Out</a>
+        <a href="admin.html" data-page="admin">Admin</a>
+    </nav>
+
+    <main>
+        <div id="content">
+            <div id="home-page" class="page">
+                <div>
+                    <input type="text" placeholder="Slot/Vehicle">
+                    <button>Search</button>
+                </div>
+                <div>
+                    <h2>Parking Lot</h2>
+                    <div id="parking-lot">
+                        <div class="slot available">1</div>
+                        <div class="slot occupied">2</div>
+                        <div class="slot available">3</div>
+                        <div class="slot available">4</div>
+                        <div class="slot occupied">5</div>
+                        <div class="slot available">6</div>
+                        <div class="slot available">7</div>
+                        <div class="slot occupied">8</div>
+                        <div class="slot available">9</div>
+                        <div class="slot available">10</div>
+                    </div>
+                </div>
+                <div>
+                    <h2>Recent Bookings</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Vehicle</th>
+                                <th>Slot</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ABC1234</td>
+                                <td>5</td>
+                                <td>10:00 AM</td>
+                            </tr>
+                            <tr>
+                                <td>XYZ5678</td>
+                                <td>12</td>
+                                <td>11:30 AM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="booking-page" class="page" style="display: none;">
+                <form>
+                    <label for="license">Vehicle License Plate:</label><br>
+                    <input type="text" id="license" name="license"><br><br>
+                    <label for="type">Vehicle Type:</label><br>
+                    <select id="type" name="type">
+                        <option value="car">Car</option>
+                        <option value="bike">Bike</option>
+                        <option value="truck">Truck</option>
+                    </select><br><br>
+                    <label for="arrival">Arrival Time:</label><br>
+                    <input type="datetime-local" id="arrival" name="arrival"><br><br>
+                    <label for="selected-slot">Selected Slot:</label><br>
+                    <input type="text" id="selected-slot" name="selected-slot" readonly><br><br>
+                    <button type="submit">Book Now</button>
+                </form>
+                <div>
+                    <h2>Parking Lot</h2>
+                    <div id="parking-lot">
+                        <div class="slot available">1</div>
+                        <div class="slot occupied">2</div>
+                        <div class="slot available">3</div>
+                        <div class="slot available">4</div>
+                        <div class="slot occupied">5</div>
+                        <div class="slot available">6</div>
+                        <div class="slot available">7</div>
+                        <div class="slot occupied">8</div>
+                        <div class="slot available">9</div>
+                        <div class="slot available">10</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="checkout-page" class="page" style="display: none;">
+                <form>
+                    <label for="license">Vehicle License Plate:</label><br>
+                    <input type="text" id="license" name="license"><br><br>
+                    <button type="submit">Check-Out</button>
+                </form>
+                <div id="parking-details">
+                    <h2>Parking Details</h2>
+                    <p>Slot Number: [Display]</p>
+                    <p>Arrival Time: [Display]</p>
+                    <p>Departure Time: [Display]</p>
+                    <p>Duration: [Display]</p>
+                    <p>Charges: [Display]</p>
+                </div>
+                <button id="payment-button">Payment</button>
+            </div>
+
+            <div id="admin-page" class="page" style="display: none;">
+                <h2>Admin Dashboard</h2>
+                <p>Admin content here...</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Copyright © 2024
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

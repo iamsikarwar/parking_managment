@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Parking Management System</title>
+    <link rel="stylesheet" href="/style/booking.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Parking Management System</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="booking.html">Booking</a>
+        <a href="checkout.html">Check-Out</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+
+    <main>
+        <form>
+            <label for="license">Vehicle License Plate:</label><br>
+            <input type="text" id="license" name="license"><br><br>
+            <label for="type">Vehicle Type:</label><br>
+            <select id="type" name="type">
+                <option value="car">Car</option>
+                <option value="bike">Bike</option>
+                <option value="truck">Truck</option>
+            </select><br><br>
+            <label for="arrival">Arrival Time:</label><br>
+            <input type="datetime-local" id="arrival" name="arrival"><br><br>
+            <label for="selected-slot">Selected Slot:</label><br>
+            <input type="text" id="selected-slot" name="selected-slot" readonly><br><br>
+            <button type="submit">Book Now</button>
+        </form>
+        <div>
+            <h2>Parking Lot</h2>
+            <div id="parking-lot">
+                <div class="slot available">1</div>
+                <div class="slot occupied">2</div>
+                <div class="slot available">3</div>
+                <div class="slot available">4</div>
+                <div class="slot occupied">5</div>
+                <div class="slot available">6</div>
+                <div class="slot available">7</div>
+                <div class="slot occupied">8</div>
+                <div class="slot available">9</div>
+                <div class="slot available">10</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Copyright © 2024
+    </footer>
+
+</body>
+</html>

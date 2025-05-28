@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="admin-page" class="page" style="display: none;">
+        <h2>Admin Dashboard</h2>
+
+        <div id="booking-management">
+            <h3>Booking Management</h3>
+            <input type="text" id="booking-search" placeholder="Search Bookings">
+            <button id="search-bookings-button">Search</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Booking ID</th>
+                        <th>Vehicle</th>
+                        <th>Slot</th>
+                        <th>Time</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="booking-table-body">
+                    </tbody>
+            </table>
+        </div>
+
+        <div id="slot-management">
+            <h3>Slot Management</h3>
+            <button id="add-slot-button">Add Slot</button>
+            <button id="remove-slot-button">Remove Slot</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Slot Number</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="slot-table-body">
+                    </tbody>
+            </table>
+        </div>
+
+        <div id="report-generation">
+            <h3>Reports</h3>
+            <select id="report-type">
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+            </select>
+            <button id="generate-report-button">Generate Report</button>
+            <div id="report-display">
+                </div>
+        </div>
+        <div id="user-management">
+          <h3>User Management</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>User ID</th>
+                <th>Username</th>
+                <th>Role</th>
+              </tr>
+            </thead>
+            <tbody id="user-table-body">
+                </tbody>
+          </table>
+          <button id="add-user-button">Add User</button>
+          <button id="remove-user-button">Remove User</button>
+        </div>
+    </div>
+
+    </body>
+</html>

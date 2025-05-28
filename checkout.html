@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check-Out - Parking Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Parking Management System</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="booking.html">Booking</a>
+        <a href="checkout.html">Check-Out</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+
+    <main>
+        <form>
+            <label for="license">Vehicle License Plate:</label><br>
+            <input type="text" id="license" name="license"><br><br>
+            <button type="submit">Check-Out</button>
+        </form>
+        <div id="parking-details">
+            <h2>Parking Details</h2>
+            <p>Slot Number: [Display]</p>
+            <p>Arrival Time: [Display]</p>
+            <p>Departure Time: [Display]</p>
+            <p>Duration: [Display]</p>
+            <p>Charges: [Display]</p>
+        </div>
+        <button id="payment-button">Payment</button>
+    </main>
+
+    <footer>
+        Copyright © 2024
+    </footer>
+
+</body>
+</html>
